@@ -1,6 +1,6 @@
 <?php
 $apiKey = "4dc0521b611160adf37876abcb3a5ed0";
-$cityId = "$_POST["name"]";
+$cityId = "$_POST["cityId"]";
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=metric&APPID=" . $apiKey;
 
 $ch = curl_init();
@@ -21,7 +21,7 @@ $currentTime = time();
 <!doctype html>
 <html>
 <head>
-<title>Forecast Weather using OpenWeatherMap with PHP</title>
+<title>Weather Report</title>
 
 <style>
 body {
